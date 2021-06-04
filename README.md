@@ -4,6 +4,8 @@ More options when uploading files like name changes, resizing via Kirby or compr
 
 https://github.com/medienbaecker/kirby-autoresize
 
+**Note:** this is my first plugin for Kirby. Small bugs here and there are possible.
+
 ## Installation
 
 Download and copy this repository to `/site/plugins/upload-extended`. Sorry, currently no Composer
