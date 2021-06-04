@@ -1,8 +1,14 @@
 # Kirby Upload Extended
 
-More options when uploading files like name changes, resizing via Kirby or compression and optional resizing via TinyPNG. Thanks at this point also to @medienbaecker for Parts of the code for pure resize with Kirby. It is the best alternative when only pure resizing is needed during upload.
+More options when uploading files like name changes, resizing via Kirby or compression and optional resizing via TinyPNG. Thanks at this point also to @medienbaecker for Parts of the code for pure resize with Kirby. It is the best alternative when only pure resizing is needed during upload. https://github.com/medienbaecker/kirby-autoresize
 
-https://github.com/medienbaecker/kirby-autoresize
+**The individual components of the plugin:**
+
+- Name change and replacement
+- Kirby size change
+- Optimization of images by TinyPNG
+- Resizing with TinyPNG
+- Upload control for other file types
 
 **Note:** this is my first plugin for Kirby. Small bugs here and there are possible.
 
