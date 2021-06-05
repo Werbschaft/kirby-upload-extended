@@ -28,21 +28,9 @@ function uploadExtended($file) {
 	$message = '';
 	$excluded = false;
 
-	if ( !empty($excludeTemplates) || !empty($excludePages) ) {
+	if( !empty($excludeTemplates) || !empty($excludePages ) ) {
 		
-		$excluded = true;
-		
-		if( !empty($excludeTemplates) ) {
-			
-			$excluded .= in_array( $file->page()->intendedTemplate(), $excludeTemplates );
-			
-		}
-		
-		if (!empty($excludePages) ) {
-			
-			$excluded .= in_array( $file->page()->uid(), $excludePages );
-			
-		}
+		$excluded = in_array( $file->page()->intendedTemplate(), $excludeTemplates ) || in_array( $file->page()->uid(), $excludePages );
 		
 	}
 	
