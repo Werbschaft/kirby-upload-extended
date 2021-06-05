@@ -28,15 +28,21 @@ function uploadExtended($file) {
 	$message = '';
 	$excluded = false;
 
-	if( !empty($excludeTemplates) ) {
+	if ( !empty($excludeTemplates) || !empty($excludePages) ) {
 		
-		$excluded = in_array( $file->page()->intendedTemplate(), $excludeTemplates );
+		$excluded = true;
 		
-	}
-	
-	if (!empty($excludePages) ) {
+		if( !empty($excludeTemplates) ) {
+			
+			$excluded .= in_array( $file->page()->intendedTemplate(), $excludeTemplates );
+			
+		}
 		
-		$excluded = in_array( $file->page()->uid(), $excludePages );
+		if (!empty($excludePages) ) {
+			
+			$excluded .= in_array( $file->page()->uid(), $excludePages );
+			
+		}
 		
 	}
 	
