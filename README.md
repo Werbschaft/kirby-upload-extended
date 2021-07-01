@@ -55,7 +55,7 @@ tinyPng | Bool | Should the images be optimized by the TinyPNG service during up
 tinyPngKey | String | The valid API key of your account
 tinyPngResize | Bool | Images can also be resized by TinyPNG. Attention: per resize this uses one credit extra
 tinyPngResizeMethod | String | If the TinyPNG Resize is used, which method should be applied: https://tinypng.com/developers/reference/php#resizing-images
-excludeTemplates | Array | Array of templates to exclude
+excludeTemplates | Array | Array of page templates to exclude
 excludePages | Array | Array of pages to exclude
 uploadLimit | Bool | Should other files, except images, be checked for size when uploaded
 uploadLimitMegabyte | Int | The Maximum Upload Limit. Files that are larger will be deleted immediately
