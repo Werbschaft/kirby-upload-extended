@@ -65,3 +65,4 @@ uploadLimitMegabyte | Int | The Maximum Upload Limit. Files that are larger will
 - [ ] Replace files in combination with the Change name option makes problems
 - [ ] next version with individual Search and Replace for the name option
 - [ ] Display at TinyPNG how many KB were saved
+- [ ] Solve problems when uploaded in site instead of page
